@@ -1,0 +1,87 @@
+body {
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: orangered;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: repeat(3, 60px);
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.cell {
+  background: #e0e0e0;
+  border-radius: 5px;
+  font-size: 2rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  transition: background 0.2s;
+}
+
+.cell:hover {
+  background: #b2dfdb;
+}
+
+#status {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  min-height: 24px;
+}
+
+#restart-btn {
+  padding: 10px 20px;
+  background: orangered;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#restart-btn:hover {
+  background: orange;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #666;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+footer a {
+  color: #4caf50;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
